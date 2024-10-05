@@ -55,6 +55,9 @@ always_comb begin
                 regwrite = 0; 
             end
         endcase
+    end else begin
+        alu_in = 4'b1111;
+        regwrite = 0;
     end
 end
 
